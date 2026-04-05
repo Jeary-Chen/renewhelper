@@ -63,7 +63,7 @@ jobs:
         with:
           context: .
           file: Dockerfile
-          platforms: linux/amd64,linux/arm64,linux/arm/v7
+          platforms: linux/amd64,linux/arm64
           push: true
           # --- 关键修改：使用 meta 步骤生成的 tags 和 labels ---
           tags: ${{ steps.meta.outputs.tags }}
